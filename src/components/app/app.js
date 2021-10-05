@@ -7,7 +7,7 @@ import Background from './food-bg.jpg';
 import { Route, Switch } from 'react-router-dom';
 
 const App = ({RestoService}) => {
-    RestoService.getMenuItems()
+    RestoService.getMenu()
         .then( menu => console.log(menu))
         .catch(error => {console.log('Произошла ошибка')})
     return (
